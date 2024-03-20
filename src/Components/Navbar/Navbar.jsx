@@ -15,14 +15,14 @@ const Navbar = () => {
       ];
       
     return (
-        <nav>
+        <nav className="text-black bg-yellow-300 p-6" >
             <div className="md:hidden" onClick={() =>setOpen(!open)}>
             {
                 open === true ?  <IoIosCloseCircleOutline className="text-2xl" /> :  <RiMenu2Fill className="text-2xl " />
             }
                
             </div>
-            <ul className="md: flex">
+            <ul className={`md:flex absolute md:static duration-1000 bg-yellow-300 px-6 shadow-lg ${open ? 'top-16':'-top-60'}`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link> )
                 }

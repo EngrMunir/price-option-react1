@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './Components/Navbar/Navbar'
-import DaisyNav from './Components/DaisyNav/DaisyNav'
+import PriceOptions from './Components/PriceOptions/PriceOptions'
+// import DaisyNav from './Components/DaisyNav/DaisyNav'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
     
       <Navbar></Navbar>
       <h1 className='text-3xl bg-yellow-500'>Price option</h1>
-      <DaisyNav></DaisyNav>
+      {/* <DaisyNav></DaisyNav> */}
+      <PriceOptions></PriceOptions>
     </>
   )
 }
